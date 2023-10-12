@@ -49,8 +49,7 @@ const CryptoDetails = () => {
   return ReactDOM.createPortal(
     <div
       className="fixed top-0 w-full h-full bg-gray-200 bg-opacity-30 first-letter:
-    backdrop-blur-sm flex items-center justify-center font-nunito
-    "
+    backdrop-blur-sm flex items-center justify-center font-nunito"
       onClick={close}
     >
       <div
@@ -69,9 +68,8 @@ const CryptoDetails = () => {
                 <h1 className="text-xl capitalize font-medium">{data.name}</h1>
                 <span
                   className="text-sm
-        py-0.5 px-2.5 ml-2 bg-cyan text-cyan bg-opacity-25
-        rounded uppercase
-        "
+                   py-0.5 px-2.5 ml-2 bg-cyan text-cyan bg-opacity-25
+                  rounded uppercase"
                 >
                   {data.symbol}
                 </span>
@@ -270,9 +268,7 @@ const CryptoDetails = () => {
                   <div className="flex justify-between">
                     <div
                       className={`text-sm px-1 ml-2 my-1 font-medium flex items-center
-          rounded uppercase bg-opacity-25 bg-green text-green
-          
-          `}
+                         rounded uppercase bg-opacity-25 bg-green text-green`}
                     >
                       <span>
                         {Number(data.sentiment_votes_up_percentage).toFixed(2)}%
@@ -470,13 +466,11 @@ const CryptoDetails = () => {
           </div>
         ) : (
           <div
-            className="w-full min-h-[60vh] h-full flex justify-center items-center
-             "
+            className="w-full min-h-[60vh] h-full flex justify-center items-center"
           >
             <div
               className="w-8 h-8 border-4 border-cyan rounded-full
-             border-b-gray-200 animate-spin 
-             "
+             border-b-gray-200 animate-spin"
               role="status"
             />
             <span className="ml-2">please wait...</span>

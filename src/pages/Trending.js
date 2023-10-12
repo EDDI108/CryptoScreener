@@ -1,4 +1,3 @@
-import { data } from "autoprefixer";
 import React, { useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { TrendingContext } from "../context/TrendingContext";
@@ -12,12 +11,10 @@ const Trending = () => {
       <div className="w-full min-h-[60vh] py-8 flex flex-wrap justify-evenly  border border-gray-100 rounded">
         {trendData &&
           trendData.map((coin) => (
-            <TrendingCoin key={data.coin_id} data={coin.item} />
+            <TrendingCoin key={coin.coin_id} data={coin.item} />
           ))}
         <button
-          className="w-[2rem] ml-4 hover:scale-110 transition-all transition-ease
-        absolute right-0 -top-10
-        "
+          className="w-[2rem] ml-4 hover:scale-110 transition-all transition-ease absolute right-0 -top-10"
           onClick={resetTrendingResult}
         >
           <svg
